@@ -1,7 +1,3 @@
---CREATE SCHEMA hw2;
---SELECT current_schema();
---SET search_path TO hw2, public;
-
 --музыкальные жанры
 CREATE TABLE genre (
 	genre_id SERIAL PRIMARY KEY,
