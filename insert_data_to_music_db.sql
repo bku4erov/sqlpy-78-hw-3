@@ -90,6 +90,10 @@ VALUES ('Humanity', 326, 4);
 INSERT INTO track(track_name, duration, album_id)
 VALUES ('When You Came into My Life', 284, 4);
 
+INSERT INTO track(track_name, duration, album_id)
+VALUES ('Иероглиф (кавер)', 287, 5);
+INSERT INTO track(track_name, duration, album_id)
+VALUES ('Вниз по течению (кавер)', 315, 5);
 
 
 
