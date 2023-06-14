@@ -41,7 +41,7 @@ FROM
 WHERE
 	array_length(
 		string_to_array(
-			artist_name,
+			regexp_replace(artist_name, '\W+', ' ', 'g'),
 			' '
 		),
 		1
@@ -55,13 +55,13 @@ FROM
 WHERE 
 	'my' = ANY(
 		string_to_array(
-			lower(track_name),
+			regexp_replace(lower(track_name), '\W+', ' ', 'g'),
 			' '
 		)
 	)
 	OR 'мой' = ANY(
 		string_to_array(
-			lower(track_name),
+			regexp_replace(lower(track_name), '\W+', ' ', 'g'),
 			' '
 		)
 	);
